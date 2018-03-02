@@ -1,0 +1,16 @@
+alias: Toggle family room lamps
+hide_entity: true
+trigger:
+#  platform: mqtt
+#  topic: cmnd/sonoff_family_room_switch_state/POWER1
+  platform: state
+  entity_id: binary_sensor.family_room__switch
+action:
+#  service_template: >
+#   homeassistant.turn_{{ 'on' if is_state('group.family_room_lamps', 'off') else 'off' }}
+#  entity_id: switch.family_room__lamp_group
+  service: mqtt.publish
+  data:
+    topic: 'cmnd/family_room/lamp_group/power'
+    payload_template: "{{ 'on' if is_state('group.family_room_lamps', 'off') else 'off' }}"
+  

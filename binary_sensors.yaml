@@ -1,0 +1,6 @@
+- platform: mqtt
+  name: "Family Room - Switch"
+  state_topic: "cmnd/family_room/switch1_state/POWER1"
+  payload_on: "ON"
+  payload_off: "OFF"
+

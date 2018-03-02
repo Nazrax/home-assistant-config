@@ -1,0 +1,17 @@
+*.db-journal
+*.db-shm
+*.db-wal
+*.log
+*.pid
+*.pickle
+*.sqlite
+.HA_VERSION
+.uuid
+entity_registry.yaml
+home-assistant.log
+home-assistant_v2.db
+plex.conf
+tts
+secrets.yaml
+secrets
+known_devices.yaml

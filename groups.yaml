@@ -1,0 +1,24 @@
+#default_view:
+#  view: yes
+#  icon: mdi:home-assistant
+#  entities:
+#  - group.family_room_lamps
+#  - group.weather
+
+family_room_lamps:
+  name: Family Room
+  entities:
+    - switch.family_room__couch_lamp
+    - switch.family_room__fireplace_lamp
+    - switch.family_room__octopus_lamp
+
+weather:
+  name: Weather
+  entities:
+    - sun.sun
+#    - sensor.weather_symbol
+#    - sensor.weather_temperature
+#    - sensor.weather_humidity
+#    - sensor.weather_cloudiness
+#    - sensor.weather_precipitation
+#    - sensor.weather_wind_speed

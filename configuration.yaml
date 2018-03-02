@@ -1,0 +1,43 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: !secret elevation_home
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/New_York
+  # Customization file
+  customize: !include customize.yaml
+
+# Includes for better organization
+automation: !include_dir_list automations
+binary_sensor: !include binary_sensors.yaml
+config: 
+frontend: !include frontend.yaml
+# google: !include google.yaml
+group: !include groups.yaml
+http: !include http.yaml
+mqtt: !include mqtt.yaml
+script: !include scripts.yaml
+sensor: !include sensors.yaml
+switch: !include switches.yaml
+tts: !include tts.yaml
+weather: !include weather.yaml
+zone: !include zones.yaml
+
+#logger:
+#  default: warn
+
+# Enables:
+#cloud: # Cloud
+conversation: # Allows you to issue voice commands from the frontend in enabled browsers
+#discovery: # Discover some devices automatically
+history: # Enables support for tracking state changes over time
+#introduction: # Show links to resources in log and frontend
+logbook: # View all events in a logbook
+map: # Enables a map showing the location of tracked devices
+sun: # Track the sun

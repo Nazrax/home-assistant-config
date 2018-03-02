@@ -1,0 +1,34 @@
+- platform: mqtt
+  name: "Family Room - Octopus Lamp"
+  command_topic: "cmnd/family_room/octopus_lamp_sonoff/power"
+  state_topic: "stat/family_room/octopus_lamp_sonoff/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
+
+- platform: mqtt
+  name: "Family Room - Fireplace Lamp"
+  command_topic: "cmnd/family_room/fireplace_lamp_sonof/power"
+  state_topic: "stat/family_room/fireplace_lamp_sonof/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
+
+- platform: mqtt
+  name: "Family Room - Couch Lamp"
+  command_topic: "cmnd/family_room/couch_lamp_sonoff/power"
+  state_topic: "stat/family_room/couch_lamp_sonoff/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
+
+- platform: mqtt
+  name: "Family Room - Lamp Group"
+  hide_entity: true
+  command_topic: "cmnd/family_room/lamp_group/power"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"

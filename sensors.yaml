@@ -1,0 +1,10 @@
+## Weather prediction
+#- platform: yr
+#  name: Weather
+#  monitored_conditions:
+#  - symbol
+#  - temperature
+#  - humidity
+#  - precipitation
+#  - windSpeed
+#  - cloudiness

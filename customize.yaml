@@ -1,0 +1,17 @@
+switch.family_room__couch_lamp:
+  friendly_name: Couch Lamp
+  icon: mdi:lamp
+
+switch.family_room__fireplace_lamp:
+  friendly_name: Fireplace Lamp
+  icon: mdi:lamp
+
+switch.family_room__octopus_lamp:
+  friendly_name: Octopus Lamp
+  icon: mdi:lamp
+
+switch.family_room__lamp_group:
+  hidden: true
+
+binary_sensor.family_room__switch:
+  hidden: true
